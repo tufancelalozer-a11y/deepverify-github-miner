@@ -6,7 +6,7 @@ echo ========================================
 echo.
 
 REM Check if Python is installed
-python --version >nul 2>&1
+py --version >nul 2>&1
 if errorlevel 1 (
     echo [HATA] Python bulunamadi!
     echo Lutfen Python yukleyin: https://python.org
@@ -16,11 +16,11 @@ if errorlevel 1 (
 
 REM Install required packages
 echo [1/3] Gerekli paketler kontrol ediliyor...
-pip install flask flask-cors >nul 2>&1
+py -m pip install flask flask-cors >nul 2>&1
 
 REM Start the server
 echo [2/3] Server baslatiliyor...
-start "DeepVerify Server" python deepverify_server.py
+start "DeepVerify Server" py deepverify_server.py
 
 REM Wait a bit for server to start
 timeout /t 3 /nobreak >nul
