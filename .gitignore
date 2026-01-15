@@ -1,0 +1,15 @@
+deepverify-github-miner/
+node_modules/
+*.pyc
+__pycache__/
+.env
+*.log
+C:/GitHub-Treasures/
+clone_log.json
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
