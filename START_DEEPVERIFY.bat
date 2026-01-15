@@ -27,7 +27,7 @@ timeout /t 3 /nobreak >nul
 
 REM Open the web interface
 echo [3/3] Web arayuzu aciliyor...
-start "" "deepverify-github-miner.html"
+start "" "index.html"
 
 echo.
 echo ========================================
